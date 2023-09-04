@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 #include<vector>
 #include "QuickSort.h"
 using namespace std;
@@ -13,7 +13,10 @@ void QuickSort::QSort(vector<int> &list, int left, int right){
         return;
     }
     
-    int pivotValue = list[right/2];
+    //int pivotValue = list[right/2];
+    int pivotIndex = left + (right - left) / 2;
+    int pivotValue = list[pivotIndex];
+    //截至修改
     int i = left;
     int j = right;
 
@@ -35,4 +38,3 @@ void QuickSort::QSort(vector<int> &list, int left, int right){
     QSort(list, left, j);
     QSort(list, i, right);
 }
-*/

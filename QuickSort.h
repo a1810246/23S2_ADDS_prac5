@@ -1,4 +1,4 @@
-/*#include<vector>
+#include<vector>
 #include "Sort.h"
 
 class QuickSort: public Sort{
@@ -6,4 +6,3 @@ class QuickSort: public Sort{
         std::vector<int> sort(std::vector<int> list);
         void QSort(std::vector<int> &list, int left, int right);
 };
-*/

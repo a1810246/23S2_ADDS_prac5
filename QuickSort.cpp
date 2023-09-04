@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include<vector>
 #include "QuickSort.h"
 using namespace std;
@@ -35,3 +35,4 @@ void QuickSort::QSort(vector<int> &list, int left, int right){
     QSort(list, left, j);
     QSort(list, i, right);
 }
+*/

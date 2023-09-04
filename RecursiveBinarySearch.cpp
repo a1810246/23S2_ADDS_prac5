@@ -3,7 +3,7 @@
 #include "RecursiveBinarySearch.h"
 using namespace std;
 
-bool search(std::vector<int> list, int target){
+bool RecursiveBinarySearch::search(std::vector<int> list, int target){
     int len = list.size();
     int middle = list[len/2];
 

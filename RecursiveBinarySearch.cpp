@@ -7,8 +7,8 @@ bool RecursiveBinarySearch::search(std::vector<int> list, int target){
     int len = list.size();
     int middle = list[len/2];
 
-    if(len = 0) return false;
-    if(middle = target) return true;
+    if(len == 0) return false;
+    if(middle == target) return true;
 
     if(middle > target){
         //取数组开始到中间的元素（不含中间元素）

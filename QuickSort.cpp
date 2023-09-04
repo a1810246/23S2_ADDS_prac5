@@ -13,10 +13,10 @@ void QuickSort::QSort(vector<int> &list, int left, int right){
         return;
     }
     
-    //int pivotValue = list[right/2];
+    //find the middle value in the list
     int pivotIndex = left + (right - left) / 2;
     int pivotValue = list[pivotIndex];
-    //截至修改
+
     int i = left;
     int j = right;
 

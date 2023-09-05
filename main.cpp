@@ -1,32 +1,27 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include "QuickSort.h"
 #include "RecursiveBinarySearch.h"
+
 using namespace std;
 
-int main()
-{
-   
-   vector<int> data = {1, 3, 5, 4, -5, 100, 7777, 2014, 0};
-    QuickSort quickSort;
+int main(){
 
-    vector<int> sortedData = quickSort.sort(data);
-
-    RecursiveBinarySearch bs;
-    int target = 4;
-    bool found = bs.search(sortedData, target);
-
-    if (found) {
-        cout <<"true"<<" ";
-    } else {
-        cout<<"false"<<" ";
+    vector<int> nums;
+    int n;
+    while(cin>>n){
+        nums.push_back(n);
     }
 
-    for (int num : sortedData) {
-        cout << num << " ";
+    QuickSort qs;
+    vector<int> sorted = qs.sort(nums);
+    
+    RecursiveBinarySearch rbs;
+    cout<<boolalpha<<rbs.search(sorted,1)<<' ';
+    
+    for(int i:sorted){
+        cout<< i << ' ';
     }
+    cout<<endl;
 
-    return 0;
-    
-    
 }
